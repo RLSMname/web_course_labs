@@ -1,0 +1,42 @@
+p {
+    font-size: 5em;
+}
+
+.text-glowing {
+    color: rgb(235, 215, 181);
+    background-color: darkblue;
+    text-shadow: white 2px -2px 7px,  wheat 1px -1px 10px;
+}
+.text-shadow {
+    text-shadow: 0.1em 0.1em 2px lightgray;
+}
+
+.text-on-fire {
+    background-color: black;
+    color: #f5f5f5;
+    animation: burn 7s infinite;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+@keyframes burn {
+    0% {
+        text-shadow: 0px -2px 4px rgb(211, 194, 40), 0px -2px 10px orange, 0px -8px 20px darkorange;
+    }
+    40% {
+        text-shadow: 0px -2px 4px rgb(211, 194, 40), 0px -2px 10px orange, 0px -8px 20px darkorange, 0px -15px 20px rgb(218, 91, 18) ;
+    }
+    60% {
+        text-shadow: 0px -2px 4px rgb(211, 194, 40), 0px -2px 10px orange, 0px -8px 20px darkorange, 0px -15px 20px red ;
+    }
+
+    80% {
+        text-shadow: 0px -2px 4px rgb(211, 194, 40), 0px -2px 10px orange, 0px -8px 20px darkorange, 0px -15px 20px rgb(218, 91, 18) ;
+    }
+
+    100% {
+        text-shadow: 0px -2px 4px rgb(211, 194, 40), 0px -2px 10px orange, 0px -10px 20px darkorange;
+    }
+}
