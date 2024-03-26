@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Outfit;
+}
+
+body {
+    background: #dadada;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #131921;
+    color: #fff;
+    height: 60px;
+    padding: 20px 15px;
+}
+
+
+.nav-deliver {
+    display: flex;
+    align-items: end;
+    margin-left: 15px;
+    font-size: 13px;
+    color: #c4c4c4;
+}
+
+.nav-deliver h1 {
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav-search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    color: gray;
+    max-width: 1900px;
+    min-width: 400px;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.nav-search-category {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px; 
+    gap: 5px;
+    background: #e5e5e5;
+    border-radius: 4px 0 0 4px;    
+}
+
+.nav-search-category p {
+    color: black;
+    font-size: 12px; 
+    min-width: 19px;
+}
+
+.nav-search-input {
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1em;
+}
+
+.nav-search-icon {
+    padding: 10px;
+    background: #febd69;
+    border-radius: 0 4px 4px 0;
+    width: 45px;
+}
+
+.nav-language{
+    display: flex;
+    align-items: center;
+    gap:2px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.nav-text {
+    margin-left: 15px;
+}
+.nav-text p {
+    font-size: 10px;
+}
+.nav-text h1 {
+    font-size: 14px;
+}
+
+.nav-cart {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.nav-bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 20px;
+    background: #232f3e;
+    color: #fff;
+    font-size: 15px;
+}
+
+.nav-bottom div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+}
+
+.slider {
+    margin: 0 10%;
+}
+
+.slider ul{
+    display: flex;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.slider-img {
+    max-width: 100%;
+    mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
+}
+
+.slider a {
+    position: absolute;
+    top:20%;
+    z-index: 1;
+    padding: 5vh 1vw;
+    color:#0000007b;
+    font-weight: 600;
+    font-size: 30px;
+    cursor: pointer;
+}
+.button-next {
+    right: 10%;
+}
+
+.box-row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-between;
+    margin: 20px 12%;
+    height: 370px;
+}
+.box-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+    background: #fff;
+    max-width: 350px;
+    min-width: 200px;
+    height: 100%;
+    z-index: 1;
+
+    /* background-color: green; */
+}
+
+.box-of-four {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 20px;
+}
+
+.box-of-four img {
+    max-width: 100%;
+    height: auto;
+}
+.box-of-four p {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+a {
+    font-size: 13px;
+    
+    font-weight: 500;
+
+    margin-top: auto; 
+    padding-bottom: 10px; 
+}
+
+.box-row a {
+    color: #009999;
+}
+
+.box-column h3 {
+    font-size: 20px;
+}
+
+.slider-box {
+    margin-top: -40vh;
+}
+
+.bottom-images {
+    flex:1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    /* background-color: blue; */
+}
+
+.box-of-three p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.top-image-div {
+    flex:2;
+    overflow: hidden; /* Clip content that overflows */
+}
+.top-image-div img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%; /* Adjust the width to fill the container */
+    object-fit: cover; /* Maintain aspect ratio */
+    transform: scale(1.1); /* Zoom effect */
+}
+
+
+.bottom-images img {
+    max-width: 100%;
+    height: auto;  
+}
+
+.box-of-three {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+.box-of-three p {
+    margin-bottom: 10px; 
+}
+
+
+
+/*
+.box-of-three {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.top-image-div {
+    flex: 2; 
+    overflow: hidden;
+    position: relative; 
+}
+
+.top-image-div:before {
+    content: ""; 
+    display: block;
+    padding-top: 35%; 
+}
+
+.top-image-div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transform: scale(1.1);
+}
+*/
